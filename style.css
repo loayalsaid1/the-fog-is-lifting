@@ -74,7 +74,9 @@ html {
     background-image: url('static/image\ \(2\)\ \(1\).png');
     background-size:contain;
 }
-
+a{
+    color: bisque;
+}
 
 /* span{
     font-size: 150%;
