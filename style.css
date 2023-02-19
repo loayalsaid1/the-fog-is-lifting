@@ -37,7 +37,8 @@ section{
     background-size: cover; /* Add this line */
     background-position: center center; /* Add this line */
     background-repeat: no-repeat; /* Add this line */
-    /* background-attachment: fixed; */
+
+
 }
 .centered{
     display: block;
@@ -74,7 +75,9 @@ html {
     background-image: url('static/image\ \(2\)\ \(1\).png');
     background-size:contain;
 }
-
+a{
+    color: rgb(242, 210, 189);
+}
 
 /* span{
     font-size: 150%;
