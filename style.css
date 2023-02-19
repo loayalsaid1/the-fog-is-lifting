@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+    color: #f5f6fa;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #192a56;
+}
+
+header *{
+    display: inline;
+    height: 50px;
+}
+header ul{
+    padding: 0;
+}
+header li{
+    margin-left: 20px;
+}
+section{
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed;
+}
+.centered{
+    display: block;
+}
+
+/* #home .profile-img{
+    width: 300px;
+    border-radius: 50%;
+} */
+footer {
+    text-align: center;
+    padding: 50px;
+    color: ghostwhite;
+    background-color: #273c75;
+}
+section h1{
+    font-size: 3em
+}
+section h2{
+    font-size: 2.5em;
+}
+section h3{
+    font-size: 1.5em;
+}
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+html {
+    background-image: url("https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-grid-background_53876-129728.jpg?w=1380&t=st=1676748759~exp=1676749359~hmac=3d51fa6d89c6e571f0eea35e89020c85afcdeccf048829e053bbef3779f3c6ab");
+}
+#home {
+    color: rgb(135, 183, 222);
+    background-image: url('static/image\ \(2\)\ \(1\).png');
+    background-size:contain;
+}
+
+
+/* span{
+    font-size: 150%;
+    color: #d1ccc0;
+} */
