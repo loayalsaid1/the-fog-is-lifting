@@ -118,6 +118,22 @@ ul {
     z-index: 9999;
 
 }
+.alert-box li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    margin: 5;
+}
+
+.alert-box ul {
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+}
+.alert-box img {
+    max-width: 50px;
+    max-height:  30px;
+}
 
 .alert-box {
     background-color: #fff;
