@@ -10,44 +10,65 @@ body {
 
 }
 
-header {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    line-height: 50px;
-    background-color: #192a56;
+.topnav{
+    height: 60px;
+    width: 90%;
+    padding: 50px;
+      border: 1px solid rgb(229, 255, 0); 
+      background-color: rgb(178, 80, 235);
+      box-shadow: 10px 10px 5px lightblue;
+      margin: 20px;
+      text-align: center;
+      }
+
+li{
+    display: inline-block;
+    border: 1px solid rgb(132, 0, 255);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
 }
 
-header *{
-    display: inline;
-    height: 50px;
+a{ text-decoration: none;
 }
-
-header ul{
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
     padding: 0;
 }
-header li{
-    margin-left: 20px;
+.topnav1{
+    width: 110px;
+    height: 100px;
+    float: left;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-color: rgb(229, 255, 0);
 }
-header a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-a{
-    color: rgb(242, 210, 189);
+.inner{
+    background-color: rgb(5, 7, 7);
+    border-color: red;
+
 }
 #home {
-    height: 100vh;
-    color: rgb(82, 151, 207);
-    background-image: url('static/image\ \(2\)\ \(1\).png');
-    background-size:contain;
-    /* background-position: ; */
+   margin: 50px;
+    padding: auto;
 }
-h2{
+.series{ 
+      float: left; 
+      margin: 5px; 
+      width: 70%;
+
+    } 
+  
+    #home-paragraph{ 
+      text-align: justify; 
+      font-size: 25px; 
+h1, h2{
     color: rgb(82, 151, 207);
+    text-align: center;
 }
 #home-paragraph{
     color: #7890cc;
@@ -78,10 +99,6 @@ section h2{
 section h3{
     font-size: 1.5em;
 }
-ul {
-    list-style:circle;
-    text-decoration: underline;
-}
 .collapse-content {
     display: none; 
 }
@@ -98,7 +115,28 @@ ul {
     background-image: url("https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-grid-background_53876-129728.jpg?w=1380&t=st=1676748759~exp=1676749359~hmac=3d51fa6d89c6e571f0eea35e89020c85afcdeccf048829e053bbef3779f3c6ab");
 
 }
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 29px;
+    color: #FEFFFF;
+}
 
+.distribution{
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.section inner{
+    background-color: #7890cc;
+    flex-wrap: wrap;
+}
+#home-paragraph{
+    color: #192a56;
+    font-size: medium;
+}
 .footer-icon {
     display: inline-block;
     margin: 0 10px;
@@ -143,6 +181,12 @@ ul {
     background-image: url("https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-grid-background_53876-129728.jpg?w=1380&t=st=1676748759~exp=1676749359~hmac=3d51fa6d89c6e571f0eea35e89020c85afcdeccf048829e053bbef3779f3c6ab");
 
 }
+.footer-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
 
 .close-button {
     margin-top: 20px;
