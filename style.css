@@ -16,8 +16,6 @@ body {
     padding: 50px;
       border: 1px solid rgb(229, 255, 0); 
       background-color: rgb(178, 80, 235);
-      box-shadow: 10px 10px 5px lightblue;
-      margin: 20px;
       text-align: center;
       }
 
@@ -37,8 +35,28 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+ /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
 .topnav1{
-    width: 110px;
+   width: 110px;
     height: 100px;
     float: left;
     border-bottom-left-radius: 10px;
@@ -59,20 +77,27 @@ ul {
 .series{ 
       float: left; 
       margin: 5px; 
-      width: 70%;
+      width: 50%;
+    height: 300px;
+} 
+.socio{
+    background-color: black;
+}
 
-    } 
-  
     #home-paragraph{ 
       text-align: justify; 
       font-size: 25px; 
-h1, h2{
+h1, h2, h3, h4, h5, h6{
     color: rgb(82, 151, 207);
     text-align: center;
 }
 #home-paragraph{
     color: #7890cc;
 
+}
+hr{
+    border: 10px solid green;
+  border-radius: 5px;
 }
 section{
     /* height: 100vh; */
@@ -137,11 +162,36 @@ p{
     color: #192a56;
     font-size: medium;
 }
-.footer-icon {
-    display: inline-block;
-    margin: 0 10px;
-        width: 30px; /* Adjust the size as needed */
-    }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;}
+
+    .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.socio{background-color: yellowgreen;}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
 
 .alert-container {
     position: fixed;
@@ -182,8 +232,8 @@ p{
 
 }
 .footer-icon{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 5px;
 }
 
@@ -229,13 +279,70 @@ p{
     header li{
         background-color: #192a56;
     }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
      body { margin-top: 120px; /* reduce top margin for smaller screens */ } header { height: 30px; /* reduce height for smaller screens */ line-height: 30px; } header li { margin-left: 10px; /* reduce left margin for smaller screens */ } section h1 { font-size: 2.5em; /* reduce font size for smaller screens */ } section h2 { font-size: 2em; } section h3 { font-size: 1.5em; } footer { padding: 30px; /* reduce padding for smaller screens */ } 
 } 
-/* @media only screen and  (max-width :1066px) (min-width : 601px) {
+@media only screen and  (max-width :1066px) (min-width : 601px) {
     header{
         height: 100px;
     }
-} */
+} 
 @media only screen and  (min-width :450px) {
     section{
         padding : 20px;
