@@ -1,110 +1,269 @@
-html {
-    background-image: url("https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-grid-background_53876-129728.jpg?w=1380&t=st=1676748759~exp=1676749359~hmac=3d51fa6d89c6e571f0eea35e89020c85afcdeccf048829e053bbef3779f3c6ab");
+/* Base styles and typography */
+:root {
+    --primary-color: rgb(82, 151, 207);
+    --accent-color: rgb(253, 155, 64);
+    --dark-blue: #192a56;
+    --text-light: #f5f6fa;
+    --section-spacing: 40px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    margin-top: 50px;
-    font-family: sans-serif;
-    color: #f5f6fa;
+    margin-top: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-light);
+    background-color: #0a192f;
     background-image: url("https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-grid-background_53876-129728.jpg?w=1380&t=st=1676748759~exp=1676749359~hmac=3d51fa6d89c6e571f0eea35e89020c85afcdeccf048829e053bbef3779f3c6ab");
-
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.6;
 }
 
+/* Header and Navigation */
 header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: var(--dark-blue);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+header nav {
+    flex: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+    position: relative;
+}
+
+/* Hide scrollbar but keep functionality */
+header nav::-webkit-scrollbar {
+    display: none;
+}
+
+/* Add visual indicator for more content */
+header nav::after {
+    content: "→";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent-color);
+    font-size: 20px;
+    animation: pulse 2s infinite;
+    display: none;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+}
+
+/* Section styling */
+section {
+    padding: var(--section-spacing);
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: rgba(25, 42, 86, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section.centered {
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Home section */
+#home {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('static/image\ \(2\)\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    border-radius: 0;
+    position: relative;
+}
+
+#home::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
-    line-height: 50px;
-    background-color: #192a56;
+    bottom: 0;
+    background-color: rgba(10, 25, 47, 0.7);
+    z-index: 1;
 }
 
-header *{
-    display: inline;
-    height: 50px;
+#home .inner {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(25, 42, 86, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-header ul{
-    padding: 0;
+#home h1 {
+    color: var(--primary-color);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-header li{
-    margin-left: 20px;
+
+#home-paragraph {
+    color: var(--text-light);
 }
-header a{
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    line-height: 1.3;
+    margin-top: 0;
+}
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+.distribution {
+    text-align: left;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+/* Colors */
+.accent-color {
+    color: var(--accent-color);
+}
+
+/* Buttons */
+.btn {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-outline-info {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+}
+
+.btn-outline-info:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn a {
+    color: inherit;
     text-decoration: none;
-    color: whitesmoke;
-}
-a{
-    color: rgb(242, 210, 189);
-}
-#home {
-    height: 100vh;
-    color: rgb(82, 151, 207);
-    background-image: url('static/image\ \(2\)\ \(1\).png');
-    background-size:contain;
-    /* background-position: ; */
-}
-h2{
-    color: rgb(82, 151, 207);
-}
-#home-paragraph{
-    color: #7890cc;
-
-}
-section{
-    /* height: 100vh; */
-    border: 1px solid black;
-    display: block;
-    justify-content: center;
-    /* align-items: center; */
-    text-align: center;
-
-    background-size: cover; /* Add this line */
-    background-position: center center; /* Add this line */
-    background-repeat: no-repeat; /* Add this line */
-}
-.centered{
     display: block;
 }
 
-section h1{
-    font-size: 3em
-}
-section h2{
-    font-size: 2.5em;
-}
-section h3{
-    font-size: 1.5em;
-}
-ul {
-    list-style:circle;
-    text-decoration: underline;
-}
-.collapse-content {
-    display: none; 
-}
-
+/* Collapses */
 .collapse-btn {
     cursor: pointer;
+    color: var(--accent-color);
     font-weight: bold;
-    text-decoration: underline;
-}
-
-.footer {
-    padding: 20px;
-    text-align: center;
-    background-image: url("https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-grid-background_53876-129728.jpg?w=1380&t=st=1676748759~exp=1676749359~hmac=3d51fa6d89c6e571f0eea35e89020c85afcdeccf048829e053bbef3779f3c6ab");
-
-}
-
-.footer-icon {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 4px;
+    margin: 15px 0;
     display: inline-block;
-    margin: 0 10px;
-        width: 30px; /* Adjust the size as needed */
-    }
+    transition: background-color 0.3s;
+}
 
+.collapse-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.collapse-content, .collapse-me-info {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Alert */
 .alert-container {
     position: fixed;
     top: 0;
@@ -116,85 +275,144 @@ ul {
     align-items: center;
     justify-content: center;
     z-index: 9999;
-
-}
-.alert-box li {
-    list-style: none;
-    display: inline;
-    padding: 10px;
-    margin: 5;
-}
-
-.alert-box ul {
-    align-items: center;
-    text-decoration: none;
-    justify-content: center;
-}
-.alert-box img {
-    max-width: 50px;
-    max-height:  30px;
 }
 
 .alert-box {
-    background-color: #fff;
-    padding: 20px;
-    max-width: 400px;
+    background-color: var(--dark-blue);
+    padding: 30px;
+    max-width: 90%;
     text-align: center;
-    background-image: url("https://img.freepik.com/free-photo/gradient-dark-blue-futuristic-digital-grid-background_53876-129728.jpg?w=1380&t=st=1676748759~exp=1676749359~hmac=3d51fa6d89c6e571f0eea35e89020c85afcdeccf048829e053bbef3779f3c6ab");
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+.alert-box h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.language-options ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.language-options li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.language-options img {
+    max-width: 50px;
+    max-height: 30px;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.language-options img:hover {
+    transform: scale(1.1);
 }
 
 .close-button {
     margin-top: 20px;
     cursor: pointer;
     color: #fff;
-    background-color: #333;
+    background-color: var(--accent-color);
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-@media only screen and (max-width: 600px) {
-    #home  {
+.close-button:hover {
+    background-color: darkorange;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(25, 42, 86, 0.9);
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+    display: inline-block;
+    margin: 0 10px;
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    body {
+        margin-top: 60px;
+    }
+    
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 1.8em; }
+    h3 { font-size: 1.5em; }
+    
+    #home {
+        height: 80vh;
         background-position: 70%;
-        margin-top: 0px;
-        padding-top: 0px;
     }
-    section img{
+    
+    section {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    /* Show scroll indicator on smaller screens */
+    header nav::after {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        margin-top: 60px;
+    }
+    
+    header li {
+        margin: 0 5px;
+    }
+    
+    header a {
+        padding: 5px 8px;
+        font-size: 0.9em;
+    }
+    
+    section {
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.3em; }
+    
+    .btn {
         width: 100%;
+        margin: 10px 0;
     }
-    section{
-        width: 100%;
-        /* padding-top: 20px; */
-        padding-bottom: 20px;
-        margin-top: 20px;
-        /* margin-right: 20px; */
-        /* margin-left: 20px; */
-        margin-bottom: 20px;
-    }
-    header {
-        height: 100px;
-        display: flexbox; 
-        background-color: #192a56;
-    }
-    header *{
-        display: inline-flexbox;
-        margin: 0px;
-    }
-    header li{
-        background-color: #192a56;
-    }
-     body { margin-top: 120px; /* reduce top margin for smaller screens */ } header { height: 30px; /* reduce height for smaller screens */ line-height: 30px; } header li { margin-left: 10px; /* reduce left margin for smaller screens */ } section h1 { font-size: 2.5em; /* reduce font size for smaller screens */ } section h2 { font-size: 2em; } section h3 { font-size: 1.5em; } footer { padding: 30px; /* reduce padding for smaller screens */ } 
-} 
-/* @media only screen and  (max-width :1066px) (min-width : 601px) {
-    header{
-        height: 100px;
-    }
-} */
-@media only screen and  (min-width :450px) {
-    section{
-        padding : 20px;
-        margin : 20px 20px 20px 20px;
-    }
-}  
+}
