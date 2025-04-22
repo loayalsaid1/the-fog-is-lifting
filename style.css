@@ -285,7 +285,7 @@ h6 { font-size: 1em; }
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.collapse-content, .collapse-me-info {
+.collapse-content {
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 4px;
@@ -397,6 +397,18 @@ footer .fadel-contacts-icons {
     align-items: center;
     margin-top: 20px;
 }
+
+footer .icons-copy-rights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+
+    font-size: .9rem;
+}
+
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {

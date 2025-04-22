@@ -588,16 +588,6 @@
                 Note: it's possible to ask for sponsership and take it for free.
             </div>
             </section>
-            <script>
-                function toggle_me_info() {
-                    var content1 = document.querySelector('.collapse-me-info');
-                    content1.style.display = (content1.style.display === 'none') ? 'block' : 'none';
-                }
-                function toggleContent() {
-                    var content = document.querySelector('.collapse-content');
-                    content.style.display = (content.style.display === 'none') ? 'block' : 'none';
-                }
-            </script>
         </main>
         <footer class="footer">
             <div class="container">
@@ -631,32 +621,17 @@
                     <img class="footer-icon" src="static/gmail.png" alt="Gmail">
                 </a>
             </div>
-            <div class="collapse-btn" onclick="toggle_me_info()">Click here to view an important note & my social media</div>
-            <div class="collapse-me-info" style="display: none;">
-                Talking to you from the past, the day i created this page,
-                <br>back then i had no any experience or knowledge about web development, 
-                <br> with the first version, plus i was in a hurry, it was just an idea with some basic knowledge about HTML and CSS
-                <br>so, it's normal to see bad code with bad design and hard to maintain with no much commits on Github
-                <br>
-                <a  rel="noreferrer noopener" href="https://www.facebook.com/profile.php?id=100003572749338" target="_blank">
-                    <img class="footer-icon" src="static/facebook (1).png" alt="Facebook">
-                </a>
-                <a rel="noreferrer noopener" href="https://twitter.com/@loayalsaid1" target="_blank">
-                    <img class="footer-icon" src="static/x-twitter.svg" alt="Twitter">
-                </a>
-                <a  rel="noreferrer noopener" href="https://github.com/loayalsaid1" target="_blank">
-                    <img class="footer-icon" src="static/github.png" alt="Github">
-                </a>
-                <a  rel="noreferrer noopener" href="https://www.linkedin.com/in/loay-alsaid-15113822b/" target="_blank">
-                    <img class="footer-icon" src="static/linkedin.png" alt="LinkedIn">
-                </a>
-
-            </div>
             <div class="icons-copy-rights">
                 <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Pixel perfect - Flaticon</a>
                 <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Ruslan Babkin - Flaticon</a>
             </div>
         </div>
         </footer>
+        <script>
+            function toggleContent() {
+                var content = document.querySelector('.collapse-content');
+                content.style.display = (content.style.display === 'none') ? 'block' : 'none';
+            }
+        </script>
     </body>
 </html>
