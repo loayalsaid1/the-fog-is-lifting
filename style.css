@@ -135,7 +135,7 @@ header a:hover {
 /* Section styling */
 section {
     padding: var(--section-spacing);
-    margin: 20px 0;
+    margin: 20px 10px;
     border-radius: 8px;
     background-color: rgba(25, 42, 86, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -408,7 +408,7 @@ h6 { font-size: 1em; }
     
     section {
         padding: 20px;
-        margin: 15px 0;
+        margin: 15px 5px;
     }
     
     /* Show scroll indicator on smaller screens */
@@ -433,7 +433,7 @@ h6 { font-size: 1em; }
     
     section {
         padding: 15px;
-        margin: 10px 0;
+        margin: 10px 3px;
     }
     
     h1 { font-size: 1.8em; }
