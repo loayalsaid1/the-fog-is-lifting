@@ -148,6 +148,12 @@ section {
     background-repeat: no-repeat;
 }
 
+section ul {
+    padding-inline-start: 0;
+    
+    list-style: none;
+}
+
 section.centered {
     text-align: center;
 }
