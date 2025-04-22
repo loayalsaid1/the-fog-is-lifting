@@ -25,18 +25,47 @@ body {
     line-height: 1.6;
 }
 
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
 /* Header and Navigation */
 header {
-    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+
     background-color: var(--dark-blue);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+
     z-index: 1000;
+}
+
+header > .container {
+    display: flex;
     align-items: center;
+
+    height: 60px;
 }
 
 header img {
