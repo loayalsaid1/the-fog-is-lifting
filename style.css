@@ -176,6 +176,10 @@ section a:hover {
     text-decoration: underline;
 }
 
+section iframe {
+    max-width: 100%;
+}
+
 /* Home section */
 #home {
     height: 90vh;
