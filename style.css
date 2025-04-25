@@ -186,7 +186,7 @@ section iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('static/image\ \(2\)\ \(1\).png');
+    /* background-image: url('static/image\ \(2\)\ \(1\).png'); */
     background-size: cover;
     background-position: center;
     margin-top: 0;
@@ -224,6 +224,40 @@ section iframe {
 
 #home-paragraph {
     color: var(--text-light);
+}
+
+#home .marquee-container {
+    position: relative;
+    height: 300px;
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#home .marquee-container .images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    width: max-content;
+    animation-name: marquee-effect;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+
+#home .marquee-container:hover .images {
+    animation-play-state: paused;
+}
+
+#home .marquee-container .images img {
+    max-height: 100%;
+}
+
+@keyframes marquee-effect {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 /* Typography */
