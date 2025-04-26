@@ -71,7 +71,6 @@ header > .container {
 
 header img {
     height: 40px;
-    margin-left: 15px;
     margin-right: 15px;
 }
 
@@ -87,25 +86,6 @@ header nav {
 /* Hide scrollbar but keep functionality */
 header nav::-webkit-scrollbar {
     display: none;
-}
-
-/* Add visual indicator for more content */
-header nav::after {
-    content: "→";
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--accent-color);
-    font-size: 20px;
-    animation: pulse 2s infinite;
-    display: none;
-}
-
-@keyframes pulse {
-    0% { opacity: 0.5; }
-    50% { opacity: 1; }
-    100% { opacity: 0.5; }
 }
 
 header ul {
@@ -488,10 +468,6 @@ footer .icons-copy-rights {
         margin: 15px 5px;
     }
     
-    /* Show scroll indicator on smaller screens */
-    header nav::after {
-        display: block;
-    }
 }
 
 @media only screen and (max-width: 480px) {
