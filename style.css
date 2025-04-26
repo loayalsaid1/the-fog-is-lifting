@@ -307,17 +307,31 @@ section a:hover {
     max-width: 800px;
     margin: 0 auto;
 }
+@media only screen and (max-width: 768px) {
+    #home .inner {
+        padding: 15px;
+    }
+}
 
 #home h1 {
     color: var(--primary-color);
-    font-size: 3em;
+    font-size: clamp(1.3rem, 7.5vw, 3rem);
     margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-#home-paragraph {
-    color: var(--text-light);
+@media (max-width: 768px) {
+    #home h1 {
+        margin-bottom: 10px;
+    }
 }
+
+#home-paragraph {
+    color: var(--primary-color);
+    font-size: clamp(1.1rem, 3vw, 1.9rem);
+    line-height: 1.3;
+}
+
 
 #home .marquee-container {
     position: relative;
