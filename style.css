@@ -290,6 +290,7 @@ section a:hover {
     background-color: rgba(10, 25, 47, 0.7);
     z-index: 1;
 }
+
 @media only screen and (max-width: 768px) {
     #home {
         height: 80vh;
