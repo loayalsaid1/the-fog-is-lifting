@@ -228,7 +228,6 @@ section iframe {
 
 #home .marquee-container {
     position: relative;
-    height: 300px;
     margin-top: 30px;
     overflow: hidden;
     z-index: 10;
@@ -238,20 +237,32 @@ section iframe {
     display: flex;
     align-items: center;
     gap: 10px;
-    height: 100%;
     width: max-content;
     animation-name: marquee-effect;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    will-change: transform;
+    animation-delay: .5s;
+        will-change: transform;
 }
 
 #home .marquee-container:hover .images {
     animation-play-state: paused;
 }
 
+#home .marquee-container .images .image-container {
+    align-items: center;
+    justify-content: center;
+
+    height: 300px;
+    display: flex;
+
+    background-position: right bottom;
+}
+
 #home .marquee-container .images img {
+    vertical-align: middle;
+    max-width: 270px;
     max-height: 100%;
 }
 
