@@ -236,17 +236,15 @@ section {
     background-repeat: no-repeat;
 }   
 
+
+section .container {
+    padding-block: 20px;
+}
 @media only screen and (max-width: 768px) {
-    section {
-    }
-    
+    section .container {
+        padding-block: 15px;
+    }   
 }
-
-@media only screen and (max-width: 480px) {
-    section {
-    }
-}
-
 
 section ul {
     padding-inline-start: 0;
