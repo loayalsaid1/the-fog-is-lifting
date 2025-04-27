@@ -199,6 +199,16 @@ header a:hover {
     }
 }
 /* End Header */
+
+/* Start Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+/* End Main */
 /* Start Sections genral  styling */
 section {
     padding: var(--section-spacing);
@@ -229,7 +239,6 @@ section {
         margin: 10px 3px;
     }
 }
-
 
 section ul {
     padding-inline-start: 0;
@@ -321,8 +330,11 @@ section a:hover {
 
 #home .marquee-container {
     position: relative;
+
+    max-width: 95vw;
     margin-top: 30px;
     overflow: hidden;
+
     z-index: 10;
 }
 
