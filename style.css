@@ -7,6 +7,10 @@
     --section-spacing: 40px;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -279,6 +283,8 @@ section a:hover {
     align-items: center;
     justify-content: center;
     /* background-image: url('static/image\ \(2\)\ \(1\).png'); */
+    max-width: 100%;
+
     background-size: cover;
     background-position: center;
     margin-top: 0;
@@ -335,7 +341,6 @@ section a:hover {
 #home .marquee-container {
     position: relative;
 
-    max-width: 75vw;
     margin-top: 30px;
     overflow: hidden;
     z-index: 10;
