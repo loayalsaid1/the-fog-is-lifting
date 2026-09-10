@@ -1,13 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-  function closeAlert() {
-    var alertContainer = document.getElementById("alert-container");
-    alertContainer.style.display = "none";
-  }
+function setCarouselAnimationState(shouldRun) {
+  if (!document.body) return;
+  document.body.classList.toggle("language-modal-dismissed", shouldRun);
+}
 
-  function toggleContent() {
-    var content = document.querySelector(".collapse-content");
-    content.style.display = content.style.display === "none" ? "block" : "none";
-  }
+document.addEventListener("DOMContentLoaded", function () {
 
   (function scrollNavHorizontally() {
     const nav = document.querySelector("header nav");
@@ -78,11 +74,19 @@ document.addEventListener("DOMContentLoaded", function () {
   sections.forEach(section => {
       observer.observe(section);
   });
+
+  const alertContainer = document.getElementById("alert-container");
+  const isAlertVisible =
+    alertContainer && getComputedStyle(alertContainer).display !== "none";
+  setCarouselAnimationState(!isAlertVisible);
 });
 
 function closeAlert() {
   var alertContainer = document.getElementById("alert-container");
-  alertContainer.style.display = "none";
+  if (alertContainer) {
+    alertContainer.style.display = "none";
+  }
+  setCarouselAnimationState(true);
 }
 
 function toggleContent() {
