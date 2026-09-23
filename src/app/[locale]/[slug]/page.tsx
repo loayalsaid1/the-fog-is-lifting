@@ -5,21 +5,6 @@ import { resources } from "@/lib/catalog";
 import { ResourceArticle } from "@/components/site/resource-article";
 import { siteConfig } from "@/lib/site";
 
-const sectionKey: Record<string, string> = {
-  "islam-in-brief": "islamInBrief",
-  "jihad-on-terrorism": "jihadOnTerrorism",
-  "islam-in-women": "islamInWomen",
-  islamophobia1: "islamophobia1",
-  "do-not-hate": "doNotHate",
-  islamophobia2: "islamophobia2",
-  "1001-inventions": "inventions",
-  "1001-inventions-for-kids": "inventionsKids",
-  "quran-and-science": "science",
-  "quran-and-philosophy": "philosophy",
-  translation: "translation",
-  dawah: "dawah",
-};
-
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
@@ -32,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const resource = resources.find((item) => item.id === slug);
   if (!resource) return {};
-  const key = sectionKey[slug];
+  const key = resource.sectionKey;
   const t = await getTranslations({ locale, namespace: "sections" });
   const meta = await getTranslations({ locale, namespace: "metadata" });
   const title = t(`${key}.title`);

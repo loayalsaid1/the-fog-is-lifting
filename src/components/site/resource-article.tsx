@@ -10,7 +10,8 @@ import {
 } from "@/components/ui/accordion";
 import type { Resource } from "@/lib/catalog";
 import { resources } from "@/lib/catalog";
-import { OptimizedImage } from "./optimized-image";
+import { sectionPrefix } from "@/lib/section";
+import { CoverFrame } from "./cover-frame";
 import { ExternalLink } from "./external-link";
 import { YoutubeEmbed } from "./youtube-embed";
 
@@ -18,28 +19,11 @@ type Props = {
   resource: Resource;
 };
 
-function sectionKey(id: string) {
-  const map: Record<string, string> = {
-    "islam-in-brief": "islamInBrief",
-    "jihad-on-terrorism": "jihadOnTerrorism",
-    "islam-in-women": "islamInWomen",
-    islamophobia1: "islamophobia1",
-    "do-not-hate": "doNotHate",
-    islamophobia2: "islamophobia2",
-    "1001-inventions": "inventions",
-    "1001-inventions-for-kids": "inventionsKids",
-    "quran-and-science": "science",
-    "quran-and-philosophy": "philosophy",
-    translation: "translation",
-    dawah: "dawah",
-  };
-  return map[id];
-}
-
 export async function ResourceArticle({ resource }: Props) {
   const t = await getTranslations();
   const locale = await getLocale();
-  const key = sectionKey(resource.id);
+  const prefix = sectionPrefix(resource);
+  const landscape = resource.orientation === "landscape";
   const englishOnly = resource.englishOnlyLocales?.includes(locale);
   const cta =
     resource.kind === "series"
@@ -48,8 +32,8 @@ export async function ResourceArticle({ resource }: Props) {
         ? t("common.getIt")
         : t("common.watchNow");
 
-  const body = t.has(`sections.${key}.body`)
-    ? (t.raw(`sections.${key}.body`) as string[])
+  const body = t.has(`${prefix}.body`)
+    ? (t.raw(`${prefix}.body`) as string[])
     : [];
   const questions = resource.questionsKey
     ? (t.raw(resource.questionsKey) as string[])
@@ -73,19 +57,29 @@ export async function ResourceArticle({ resource }: Props) {
         </p>
       ) : null}
 
-      <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,280px)_1fr]">
-        <div className="lg:sticky lg:top-24">
-          <div className="overflow-hidden rounded-md border border-border bg-paper shadow-[0_16px_40px_rgba(44,36,22,0.1)]">
-            <OptimizedImage
-              src={resource.image}
-              alt={t(resource.imageAltKey)}
-              width={560}
-              height={780}
-              priority
-              className="aspect-[3/4] object-cover"
-            />
-          </div>
-          <Button asChild variant="brass" className="mt-4 w-full">
+      <div
+        className={
+          landscape
+            ? "grid gap-10"
+            : "grid items-start gap-10 lg:grid-cols-[minmax(0,280px)_1fr]"
+        }
+      >
+        <div className={landscape ? undefined : "lg:sticky lg:top-24"}>
+          <CoverFrame
+            src={resource.image}
+            alt={t(resource.imageAltKey)}
+            orientation={resource.orientation}
+            width={resource.width}
+            height={resource.height}
+            priority
+            sizes={
+              landscape
+                ? "(max-width: 1024px) 92vw, 1100px"
+                : "(max-width: 1024px) 70vw, 280px"
+            }
+            className={landscape ? "max-w-none" : "mx-auto lg:mx-0"}
+          />
+          <Button asChild variant="brass" className="mt-4 w-full sm:w-auto">
             <ExternalLink href={resource.href}>
               {cta}
               <ArrowUpRight />
@@ -98,24 +92,24 @@ export async function ResourceArticle({ resource }: Props) {
             {t(`kinds.${resource.kind}`)} · {String(currentIndex + 1).padStart(2, "0")}
           </p>
           <h1 className="mt-3 font-serif text-4xl leading-tight text-walnut sm:text-5xl">
-            {t(`sections.${key}.title`)}
+            {t(`${prefix}.title`)}
           </h1>
 
-          {t.has(`sections.${key}.kicker`) ? (
+          {t.has(`${prefix}.kicker`) ? (
             <p className="mt-5 font-serif text-2xl italic text-terra">
-              {t(`sections.${key}.kicker`)}
+              {t(`${prefix}.kicker`)}
             </p>
           ) : null}
 
-          {t.has(`sections.${key}.lead`) ? (
+          {t.has(`${prefix}.lead`) ? (
             <p className="mt-5 text-lg text-muted-foreground">
-              {t(`sections.${key}.lead`)}
+              {t(`${prefix}.lead`)}
             </p>
           ) : null}
 
-          {t.has(`sections.${key}.quote`) ? (
+          {t.has(`${prefix}.quote`) ? (
             <blockquote className="mt-6 border-s-2 border-brass ps-5 font-serif text-xl italic text-walnut">
-              {t(`sections.${key}.quote`)}
+              {t(`${prefix}.quote`)}
             </blockquote>
           ) : null}
 
@@ -125,9 +119,9 @@ export async function ResourceArticle({ resource }: Props) {
             ))}
           </div>
 
-          {t.has(`sections.${key}.highlight`) ? (
+          {t.has(`${prefix}.highlight`) ? (
             <p className="mt-6 font-serif text-xl text-terra">
-              {t(`sections.${key}.highlight`)}
+              {t(`${prefix}.highlight`)}
             </p>
           ) : null}
 
@@ -144,9 +138,9 @@ export async function ResourceArticle({ resource }: Props) {
             </ul>
           ) : null}
 
-          {t.has(`sections.${key}.cta`) ? (
+          {t.has(`${prefix}.cta`) ? (
             <p className="mt-5 font-serif text-xl text-walnut">
-              {t(`sections.${key}.cta`)}
+              {t(`${prefix}.cta`)}
             </p>
           ) : null}
 
@@ -197,7 +191,7 @@ export async function ResourceArticle({ resource }: Props) {
             </div>
           ) : null}
 
-          {t.has(`sections.${key}.article`) ? (
+          {t.has(`${prefix}.article`) ? (
             <p className="mt-6">
               <ExternalLink
                 href="https://themuslimvibe.com/faith-islam/13-scientific-facts-in-the-holy-quran"
@@ -208,27 +202,27 @@ export async function ResourceArticle({ resource }: Props) {
             </p>
           ) : null}
 
-          {t.has(`sections.${key}.explore`) ? (
-            <p className="mt-6 text-muted-foreground">{t(`sections.${key}.explore`)}</p>
+          {t.has(`${prefix}.explore`) ? (
+            <p className="mt-6 text-muted-foreground">{t(`${prefix}.explore`)}</p>
           ) : null}
 
-          {t.has(`sections.${key}.audio`) ? (
-            <p className="mt-6 text-muted-foreground">{t(`sections.${key}.audio`)}</p>
+          {t.has(`${prefix}.audio`) ? (
+            <p className="mt-6 text-muted-foreground">{t(`${prefix}.audio`)}</p>
           ) : null}
 
-          {t.has(`sections.${key}.note`) ? (
-            <p className="mt-6 text-sm text-muted-foreground">{t(`sections.${key}.note`)}</p>
+          {t.has(`${prefix}.note`) ? (
+            <p className="mt-6 text-sm text-muted-foreground">{t(`${prefix}.note`)}</p>
           ) : null}
 
           {resource.youtubeId ? (
             <YoutubeEmbed
               id={resource.youtubeId}
               title={
-                t.has(`sections.${key}.film`)
-                  ? t(`sections.${key}.film`)
-                  : t.has(`sections.${key}.video`)
-                    ? t(`sections.${key}.video`)
-                    : t(`sections.${key}.title`)
+                t.has(`${prefix}.film`)
+                  ? t(`${prefix}.film`)
+                  : t.has(`${prefix}.video`)
+                    ? t(`${prefix}.video`)
+                    : t(`${prefix}.title`)
               }
             />
           ) : null}

@@ -20,9 +20,9 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   const items = [
-    { href: "/#collection", label: t("nav.home") },
+    { hash: "collection", label: t("nav.home") },
     ...resources.map((resource) => ({
-      href: `/${resource.id}`,
+      hash: resource.id,
       label: t(`nav.${resource.navKey}`),
     })),
   ];
@@ -49,8 +49,8 @@ export function SiteHeader() {
         >
           {items.slice(0, 6).map((item) => (
             <Link
-              key={item.href}
-              href={item.href}
+              key={item.hash}
+              href={{ pathname: "/", hash: item.hash }}
               className="min-h-11 shrink-0 px-2.5 py-2 font-[family-name:var(--font-display)] text-[0.65rem] uppercase tracking-[0.14em] text-muted-foreground transition-colors hover:text-walnut focus-ring rounded-sm"
             >
               {item.label}
@@ -73,8 +73,8 @@ export function SiteHeader() {
               <nav className="mt-4 flex flex-col gap-1" aria-label="All sections">
                 {items.map((item) => (
                   <Link
-                    key={item.href}
-                    href={item.href}
+                    key={item.hash}
+                    href={{ pathname: "/", hash: item.hash }}
                     onClick={() => setOpen(false)}
                     className="min-h-11 rounded-sm px-2 py-2 font-serif text-lg text-walnut hover:bg-secondary focus-ring"
                   >
