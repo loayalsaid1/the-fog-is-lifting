@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "title": "La niebla se está levantando - Bridges Foundation",
+    "description": "Ya sea que tengas curiosidad sobre el Islam, preguntas urgentes, datos sobre el Islam y el Corán, o una traducción precisa del Corán, La niebla se está levantando está aquí para guiarte.",
+    "ogTitle": "La niebla se está levantando - Bridges Foundation",
+    "ogDescription": "Documentales, series, libros y una traducción precisa del Corán que aclaran malentendidos sobre el Islam."
+  },
+  "common": {
+    "skipToContent": "Saltar al contenido",
+    "watchNow": "Míralo ahora",
+    "learnMore": "Saber más",
+    "openPlaylist": "Abrir la lista",
+    "getIt": "Obtener el curso",
+    "download": "Descargar",
+    "purchase": "Descarga y compra",
+    "englishOnly": "Este capítulo está disponible por ahora en inglés.",
+    "close": "Cerrar",
+    "menu": "Abrir menú",
+    "language": "Idioma",
+    "share": "Compartir",
+    "copyLink": "Copiar enlace",
+    "copied": "Enlace copiado",
+    "scrollTop": "Volver arriba",
+    "external": "Se abre en una pestaña nueva"
+  },
+  "welcome": {
+    "title": "Contenido traducido a varios idiomas",
+    "body": "La niebla se está levantando se ofrece en inglés, español, hebreo, hindi y chino. El inglés es la edición más completa.",
+    "hint": "Algunos capítulos existen solo en inglés. Esas páginas se abren igual, con una nota discreta.",
+    "continue": "Entrar a la biblioteca",
+    "thanks": "Gracias por visitarnos."
+  },
+  "nav": {
+    "home": "Inicio",
+    "islamInBrief": "Islam en breve",
+    "jihadOnTerrorism": "Yihad contra el terrorismo",
+    "islamInWomen": "Islam en las mujeres",
+    "islamophobia1": "Islamofobia 1",
+    "doNotHate": "No odies, educa",
+    "islamophobia2": "Islamofobia 2",
+    "inventions": "1001 invenciones",
+    "inventionsKids": "Para niños",
+    "science": "Ciencia y Corán",
+    "philosophy": "Filosofía y Corán",
+    "quran": "Corán",
+    "dawah": "Para musulmanes"
+  },
+  "hero": {
+    "kicker": "Una biblioteca de aclaración",
+    "title": "La niebla se está levantando",
+    "lead": "Ya sea que tengas curiosidad sobre el Islam, algunas preguntas urgentes, datos interesantes sobre el Islam y el Corán, o una traducción precisa del Corán, La niebla se está levantando está aquí para guiarte.",
+    "primary": "Empezar con Islam en breve",
+    "secondary": "Ver la colección"
+  },
+  "toc": {
+    "title": "La colección",
+    "subtitle": "Documentales, series cortas, libros y un curso — dispuestos como una sala de lectura, no como un feed."
+  },
+  "kinds": {
+    "documentary": "Documental",
+    "series": "Serie",
+    "book": "Libro",
+    "course": "Curso"
+  },
+  "sections": {
+    "islamInBrief": {
+      "title": "Islam en breve",
+      "imageAlt": "Portada de Islam en breve",
+      "body": [
+        "En la primera parte de «La niebla se disipa», titulada «Islam en breve», aprenderás en 74 minutos más sobre las creencias y rituales islámicos de lo que podrías obtener en 74 días de lectura.",
+        "Para la comodidad del espectador, la película consta de diez capítulos; cada uno trata uno o más conceptos, creencias o rituales. Se recomienda verlos en orden.",
+        "«Islam en breve» nació como una presentación de Fadel Soliman —autor de la película— ante más de 40.000 no musulmanes en iglesias, universidades, conferencias y agencias gubernamentales."
+      ],
+      "highlight": "Traducido a 30 idiomas internacionales, incluido el hebreo."
+    },
+    "jihadOnTerrorism": {
+      "title": "Yihad contra el terrorismo",
+      "imageAlt": "Portada de Yihad contra el terrorismo",
+      "body": [
+        "Como segunda parte de «La niebla se disipa», «Yihad contra el terrorismo» aborda la concepción más controvertida difundida por Occidente después del 11 de septiembre: que el Islam es la religión de los terroristas y que el Corán es un libro de violencia y odio.",
+        "A través del documental de 100 minutos de Bridges Foundation aprenderás el verdadero significado de «yihad»: que el Islam dio a las personas una forma de poner fin al terror, y que la yihad es la verdadera lucha contra el terrorismo."
+      ]
+    },
+    "islamInWomen": {
+      "title": "El Islam en las mujeres",
+      "imageAlt": "Portada de El Islam en las mujeres",
+      "body": [
+        "«El Islam en las mujeres» examina un hecho llamativo: la mayoría de las nuevas conversiones al Islam son de mujeres, a pesar de que muchos ataques islamófobos afirman que es discriminatorio y opresivo hacia ellas.",
+        "A través de entrevistas sinceras con doce conversas —incluida una no musulmana, una profesora de Al-Azhar y una profesora de la Escuela de Divinidad de Harvard— el documental revela por qué la religión atrae a más mujeres que hombres y refuta concepciones erróneas.",
+        "Las entrevistadas provienen de Bélgica, Gran Bretaña, Alemania, Grecia, Hong Kong, Indonesia, Países Bajos, Sri Lanka, Suecia y Estados Unidos."
+      ]
+    },
+    "islamophobia1": {
+      "title": "Serie Islamofobia 1",
+      "imageAlt": "Miniatura de la serie Islamofobia 1",
+      "lead": "¿Listo para descubrir la verdad sobre el Islam, los musulmanes, la Sharia, el estilo de vida musulmán y la vida del Profeta Muhammad (PBUH)? Una serie de YouTube de 29 partes responde preguntas y desmitifica conceptos erróneos.",
+      "questions": [
+        "¿Es la religión el opio de las masas?",
+        "¿Cómo podría un profeta de Dios saquear una caravana?",
+        "Muhammad y Aisha, la historia de amor perfecta",
+        "¿Por qué las mujeres musulmanas usan el hiyab?",
+        "¿Cómo trató el Islam la esclavitud?",
+        "¿Prohíbe el Islam la amistad con no musulmanes?",
+        "¿Puede un musulmán ser actor o músico?",
+        "¿Las mujeres son oprimidas por el Islam?",
+        "¿Es cierto que los ex musulmanes deben ser asesinados?",
+        "Todo esto y mucho más en la lista de reproducción."
+      ]
+    },
+    "doNotHate": {
+      "title": "No odies, educa",
+      "imageAlt": "Portada de No odies, educa",
+      "lead": "En menos de media hora y a lo largo de 30 vídeos cortos de YouTube, descubre la vida y las enseñanzas del Profeta Muhammad (PBUH): su personalidad, sus modales y su estilo de vida."
+    },
+    "islamophobia2": {
+      "title": "Serie Islamofobia 2",
+      "imageAlt": "Miniatura de Islamofobia 2",
+      "kicker": "¿Te encuentras reflexionando sobre las preguntas profundas de la vida?",
+      "lead": "No estás solo. Esta serie de 30 vídeos responde preguntas y desmiente conceptos erróneos sobre la religión, Dios, el islam y mucho más.",
+      "questions": [
+        "¿Cuestionar es blasfemia?",
+        "¿Ateísmo o religión?",
+        "¿Por qué Dios no me consultó antes de crearme?",
+        "¿Quién creó a Dios?",
+        "Si Alá es justo, ¿por qué la vida es tan injusta?",
+        "¿El Corán se dirige a la mente o al corazón?",
+        "¿Dios nos ama?",
+        "¿Jesús es mejor o Mahoma?",
+        "Adicción",
+        "Y mucho más."
+      ],
+      "cta": "Prepárate para un viaje de conocimiento y exploración."
+    },
+    "translation": {
+      "title": "Traducción de Bridges de las Diez Qira'at del Noble Corán",
+      "imageAlt": "Portada de la traducción de Bridges del Corán",
+      "lead": "La traducción de Bridges ayuda al lector no árabe a reflexionar sobre el Corán (tadabbur). Los traductores se centraron no solo en lo que Dios quiso decir, sino en cómo Él habló.",
+      "featuresTitle": "Características principales",
+      "features": [
+        "Es la primera traducción que incluye las diez Qira'at. El texto principal sigue a Asem, narrada por Hafs. Alrededor del 30% de las variaciones —las que afectan al significado— aparecen en notas.",
+        "Es la primera traducción que tiene en cuenta los cambios gramaticales del Corán en tiempos, números y pronombres. Hablar del Más Allá en pasado se respeta.",
+        "Las formas singular, dual y plural se marcan con superíndices (youpl, yousg, youdl) en lugar de interpretaciones entre corchetes."
+      ],
+      "links": {
+        "apple": "Aplicación gratuita en App Store",
+        "ebook": "Copia digital por £2.99",
+        "hardcover": "Copia impresa con 14% de descuento",
+        "play": "Aplicación gratuita en Google Play"
+      }
+    }
+  },
+  "footer": {
+    "shareTitle": "Por favor, comparte",
+    "shareBody": "Una biblioteca breve y honesta es más útil cuando viaja. Copia el enlace o descarga el código QR.",
+    "qr": "Descargar el código QR",
+    "copyright": "© Loay, 2023. Gracias a Fadel Soliman y Bridges Foundation.",
+    "visit": "Visita Bridges Foundation",
+    "follow": "Sigue a Fadel Soliman"
+  }
+}

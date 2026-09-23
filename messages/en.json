@@ -1,0 +1,258 @@
+{
+  "metadata": {
+    "title": "The Fog Is Lifting - Bridges Foundation",
+    "description": "Whether you're curious about Islam, have pressing questions, seek interesting facts about Islam and the Quran, or are looking for an accurate Quran translation, The Fog Is Lifting is here to guide you.",
+    "ogTitle": "The Fog Is Lifting - Bridges Foundation",
+    "ogDescription": "Documentaries, series, books, and a precise Quran translation that clarify misconceptions about Islam."
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "watchNow": "Watch now",
+    "learnMore": "Learn more",
+    "openPlaylist": "Open playlist",
+    "getIt": "Get this course",
+    "download": "Download",
+    "purchase": "Download and purchase",
+    "englishOnly": "This chapter is currently available in English.",
+    "close": "Close",
+    "menu": "Open menu",
+    "language": "Language",
+    "share": "Share",
+    "copyLink": "Copy link",
+    "copied": "Link copied",
+    "scrollTop": "Back to top",
+    "external": "Opens in a new tab"
+  },
+  "welcome": {
+    "title": "Available in several languages",
+    "body": "The Fog Is Lifting is offered in English, Spanish, Hebrew, Hindi, and Chinese. English remains the most complete edition.",
+    "hint": "Some chapters exist only in English. Those pages still open, with a quiet note at the top.",
+    "continue": "Enter the library",
+    "thanks": "Thank you for visiting."
+  },
+  "nav": {
+    "home": "Home",
+    "islamInBrief": "Islam in Brief",
+    "jihadOnTerrorism": "Jihad on Terrorism",
+    "islamInWomen": "Islam in Women",
+    "islamophobia1": "Islamophobia 1",
+    "doNotHate": "Don't Hate, Educate",
+    "islamophobia2": "Islamophobia 2",
+    "inventions": "1001 Inventions",
+    "inventionsKids": "For Kids",
+    "science": "Science and Quran",
+    "philosophy": "Philosophy and Quran",
+    "quran": "Qur'an",
+    "dawah": "For Muslims"
+  },
+  "hero": {
+    "kicker": "A library of clarification",
+    "title": "The Fog Is Lifting",
+    "lead": "Whether you're curious about Islam, have pressing questions, seek interesting facts about Islam and the Quran, or are looking for an accurate Quran translation, The Fog Is Lifting is here to guide you.",
+    "primary": "Begin with Islam in Brief",
+    "secondary": "Browse the collection"
+  },
+  "toc": {
+    "title": "The collection",
+    "subtitle": "Documentaries, short series, books, and a course — arranged as a quiet reading room rather than a feed."
+  },
+  "kinds": {
+    "documentary": "Documentary",
+    "series": "Series",
+    "book": "Book",
+    "course": "Course"
+  },
+  "sections": {
+    "islamInBrief": {
+      "title": "Islam in Brief",
+      "imageAlt": "Cover of Islam in Brief",
+      "body": [
+        "In the first part of The Fog Is Lifting, “Islam in Brief”, you will learn in 74 minutes more about Islamic beliefs and rituals than you can acquire in 74 days of reading.",
+        "For the viewer’s convenience, the film consists of ten chapters; each one deals with a specific concept, belief or ritual. Watching the chapters in order is recommended.",
+        "Islam in Brief began as a presentation given by Fadel Soliman — the author of the film — to over 40,000 non-Muslims around the world: in churches, universities, conferences and government agencies."
+      ],
+      "highlight": "Translated into 30 languages, including Hebrew."
+    },
+    "jihadOnTerrorism": {
+      "title": "Jihad on Terrorism",
+      "imageAlt": "Cover of Jihad on Terrorism",
+      "body": [
+        "As the second part of The Fog Is Lifting, “Jihad on Terrorism” tackles the most controversial misconception spread in the West after 9/11: that Islam is the religion of terrorists, and that the Quran is a book of violence and hatred.",
+        "Through this 100-minute Bridges Foundation documentary you will learn the true meaning of “Jihad”: that Islam gave people a way to end terror in the world, and that jihad is the true war on terrorism."
+      ]
+    },
+    "islamInWomen": {
+      "title": "Islam in Women",
+      "imageAlt": "Cover of Islam in Women",
+      "body": [
+        "Islam in Women examines a striking fact: a majority of new converts to Islam are women, even though many Islamophobic attacks claim that Islam is discriminatory and oppressive toward women.",
+        "Through candid interviews with twelve female converts — including a non-Muslim woman, a professor from Al-Azhar University, and a professor at Harvard Divinity School — the film reveals why the religion attracts more women than men, and refutes common misconceptions.",
+        "The women hail from Belgium, Britain, Germany, Greece, Hong Kong, Indonesia, the Netherlands, Sri Lanka, Sweden and the United States."
+      ]
+    },
+    "islamophobia1": {
+      "title": "Islamophobia 1",
+      "imageAlt": "Thumbnail for the Islamophobia 1 series",
+      "lead": "A 29-part YouTube series answering questions and debunking misconceptions about Islam, Muslims, Sharia, Muslim life, and the Prophet Muhammad (peace be upon him).",
+      "questions": [
+        "Is religion the opiate of the masses?",
+        "How could a prophet of God raid a caravan?",
+        "Muhammad and Aisha: the perfect love story",
+        "Why do Muslim women wear hijab?",
+        "How did Islam deal with slavery?",
+        "Does Islam forbid friendship with non-Muslims?",
+        "Can a Muslim be an actor or a musician?",
+        "Are women oppressed by Islam?",
+        "Is it true that ex-Muslims should be killed?",
+        "All of this — and more — in the playlist."
+      ]
+    },
+    "doNotHate": {
+      "title": "Don't Hate, Educate",
+      "imageAlt": "Cover of Don't Hate, Educate",
+      "lead": "In less than half an hour, across 30 short YouTube videos, discover the life and teachings of Prophet Muhammad (peace be upon him): his personality, manners, and way of living."
+    },
+    "islamophobia2": {
+      "title": "Islamophobia 2",
+      "imageAlt": "Thumbnail for the Islamophobia 2 series",
+      "kicker": "Do you find yourself pondering life's profound questions?",
+      "lead": "You are not alone. This 30-video series addresses questions and misconceptions about religion, God, Islam, and more.",
+      "questions": [
+        "Is questioning blasphemy?",
+        "Atheism or religion?",
+        "Why didn't God ask me before He created me?",
+        "Who created God?",
+        "If Allah is just, why is life so unfair?",
+        "Does the Qur'an address the mind or the heart?",
+        "Does God love us?",
+        "Is Jesus better, or Muhammad?",
+        "Addiction",
+        "And even more."
+      ],
+      "cta": "A journey of knowledge and exploration."
+    },
+    "inventions": {
+      "title": "1001 Inventions: The Enduring Legacy of Muslim Civilization",
+      "imageAlt": "Cover of 1001 Inventions",
+      "body": [
+        "1001 Inventions takes readers through forgotten Islamic history to discover scientific and technological inventions still used throughout the world today — engineering, early medicine, and the origins of cartography among them.",
+        "The book covers seven aspects of life: home, school, hospital, market, town, world and universe."
+      ],
+      "explore": "Explore more at 1001inventions.com and the 1001 Inventions YouTube channel.",
+      "links": {
+        "pdf": "Get a PDF of the book",
+        "hardcover": "Hardcover from $13.50",
+        "app": "Download the Google Play app"
+      }
+    },
+    "inventionsKids": {
+      "title": "1001 Inventions and Awesome Facts from Muslim Civilization",
+      "imageAlt": "Cover of the children's companion to 1001 Inventions",
+      "body": [
+        "From the 7th century onward, Muslim civilization produced advances that still shape everyday life: water clocks, detailed maps, universities founded by women, vast domes, and charts of the stars.",
+        "This National Geographic companion packs facts, photographs and stories that connect that history to the world children live in now."
+      ],
+      "film": "Watch the film: The Library of Secrets",
+      "links": {
+        "pdf": "Get a PDF of the book",
+        "hardcover": "Hardcover from £4.55"
+      }
+    },
+    "science": {
+      "title": "Science and the Holy Quran",
+      "imageAlt": "Artwork for Science and the Quran",
+      "quote": "“We will show them Our signs in the universe and in their own selves, until it becomes manifest to them that this (the Quran) is the truth.” (Quran 41:53)",
+      "body": [
+        "The Quran is not a scientific textbook, yet it contains remarkable insights that reach beyond science. Some people exaggerate supposed ‘scientific miracles’; still, there are undeniably fascinating observations.",
+        "How could an illiterate man living in the desert more than fourteen centuries ago mention phenomena discovered by modern science only in the last century?"
+      ],
+      "article": "13 scientific facts in the Holy Quran",
+      "video": "The many scientific miracles of the Holy Quran"
+    },
+    "philosophy": {
+      "title": "The Story of Faith between Philosophy, Science, and the Qur'an",
+      "imageAlt": "Cover of The Story of Faith",
+      "body": [
+        "Hayran Ibn al-Ad'af is a young man whose passion for philosophy leads him to search for answers after being expelled from school. His notebook records the discussions of Sheikh Abu An-Nur al-Mawzun of Samarqand.",
+        "Sheikh Nadim al-Jisr, Mufti of Tripoli and Northern Lebanon, presents those answers without narrowing them to slogans: Greek, Muslim and Western thought, and what the Qur'an evokes toward faith and certainty."
+      ],
+      "audio": "If you know Arabic, do not miss the immersive audio version on the Bridges Foundation YouTube channel.",
+      "links": {
+        "hardcover": "Hardcover for less than $50"
+      }
+    },
+    "translation": {
+      "title": "Bridges' Translation of the Ten Qira'at of the Noble Qur'an",
+      "imageAlt": "Cover of Bridges' Translation of the Qur'an",
+      "lead": "Bridges’ translation helps the non-Arabic reader ponder the Qur’an (tadabbur). The translators focused not only on what God meant to say, but on how He spoke.",
+      "featuresTitle": "Main features",
+      "features": [
+        "It is the first translation that includes the ten Qira’at (modes of recitation). The main text follows Asem, narrated by Hafs. About 30% of the variations — those that affect meaning — appear in footnotes.",
+        "It is the first translation that respects Qur’anic grammatical shifts in verb tenses, numbers, and pronouns. Speaking about the Hereafter in the past tense is kept.",
+        "Singular, dual and plural forms of pronouns and imperative verbs are marked with superscripts (youpl, yousg, youdl) rather than inserted interpretations in brackets."
+      ],
+      "links": {
+        "apple": "Free app on the App Store",
+        "ebook": "Soft copy for £2.99",
+        "hardcover": "Hardcover with 14% off",
+        "play": "Free app on Google Play"
+      }
+    },
+    "dawah": {
+      "title": "The Arts of Da'wa | Level 1: How to present Islam",
+      "imageAlt": "Poster for The Arts of Da'wa",
+      "lead": "Fadel Soliman teaches how to represent Islam. This has nothing to do with how much knowledge you already have.",
+      "note": "Sponsorship may be requested so the course can be taken at no cost.",
+      "curriculum": [
+        {
+          "title": "Presentation and public speaking",
+          "items": [
+            "How to talk with impact",
+            "How to connect with the audience",
+            "How to convey the message",
+            "How to sound logical",
+            "How to sound spiritual",
+            "What Da'wa means",
+            "Talking to atheists and agnostics"
+          ]
+        },
+        {
+          "title": "Presenting Islam",
+          "items": [
+            "What is Islam",
+            "Who is Allah",
+            "Who is Prophet Muhammad",
+            "The purpose of life",
+            "The six beliefs, simply and clearly"
+          ]
+        },
+        {
+          "title": "Islamic rituals",
+          "items": [
+            "The meaning of the Shahada",
+            "Why Muslims pray as they do",
+            "Zakat, fasting Ramadan, and Hajj"
+          ]
+        },
+        {
+          "title": "Islamic concepts",
+          "items": [
+            "Hijab",
+            "Status of women in Islam",
+            "Does Jihad equal terrorism?",
+            "A religion of peace or of war?",
+            "Human rights, speech, equality, brotherhood, justice"
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "shareTitle": "Please share",
+    "shareBody": "A short, honest library is more useful when it travels. Copy the link, or download the QR code.",
+    "qr": "Download the QR code",
+    "copyright": "© Loay, 2023. Thanks to Fadel Soliman and Bridges Foundation.",
+    "visit": "Visit Bridges Foundation",
+    "follow": "Follow Fadel Soliman"
+  }
+}
